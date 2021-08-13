@@ -20,7 +20,7 @@ fi
 set -u
 
 # If RUSTUP_UPDATE_ROOT is unset or empty, default it.
-RUSTUP_UPDATE_ROOT="${RUSTUP_UPDATE_ROOT:-https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup/archive/1.24.3}"
+RUSTUP_UPDATE_ROOT="${RUSTUP_UPDATE_ROOT:-"https://mirrors.tuna.tsinghua.edu.cn/rustup"}
 
 #XXX: If you change anything here, please make the same changes in setup_mode.rs
 usage() {
