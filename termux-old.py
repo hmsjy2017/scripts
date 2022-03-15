@@ -43,38 +43,38 @@ def update():
     try:
         if int(option) == 1:
             add_gpg_key()
-            exec('echo "deb https://fc.iamsjy.com/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list')
-            exec('echo "deb https://fc.iamsjy.com/termux-old/science-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
-            exec('echo "deb https://fc.iamsjy.com/termux-old/game-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
-            exec('echo "deb https://fc.iamsjy.com/termux-old/unstable-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
-            exec('echo "deb https://fc.iamsjy.com/termux-old/x11-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/science-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/game-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/unstable-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/x11-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
             update()
 
         elif int(option) == 2:
             add_gpg_key()
-            exec('echo "deb https://fc.iamsjy.com/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list')
-            exec('echo "deb https://fc.iamsjy.com/termux-old/science-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
-            exec('echo "deb https://fc.iamsjy.com/termux-old/game-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
-            exec('echo "deb https://fc.iamsjy.com/termux-old/unstable-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
-            exec('echo "deb https://fc.iamsjy.com/termux-old/x11-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/science-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/game-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/unstable-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/x11-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
             update()
 
         elif int(option) == 3:
             add_gpg_key()
-            exec('echo "deb https://fc.iamsjy.com/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list')
-            exec('echo "deb https://fc.iamsjy.com/termux-old/science-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
-            exec('echo "deb https://fc.iamsjy.com/termux-old/game-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
-            exec('echo "deb https://fc.iamsjy.com/termux-old/unstable-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
-            exec('echo "deb https://fc.iamsjy.com/termux-old/x11-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/science-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/game-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/unstable-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/x11-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
             update()
 
         elif int(option) == 4:
             add_gpg_key()
-            exec('echo "deb https://fc.iamsjy.com/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list')
-            exec('echo "deb https://fc.iamsjy.com/termux-old/science-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
-            exec('echo "deb https://fc.iamsjy.com/termux-old/game-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
-            exec('echo "deb https://fc.iamsjy.com/termux-old/unstable-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
-            exec('echo "deb https://fc.iamsjy.com/termux-old/x11-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/science-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/game-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/unstable-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
+            exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/x11-packages-21 stable main" >> $PREFIX/etc/apt/sources.list')
             update()
 
         elif int(option) == 5:
