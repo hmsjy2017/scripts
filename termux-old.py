@@ -16,7 +16,7 @@ def logo():
     print("   | |/ _ \ '__| '_ ` _ \| | | \ \/ / | |  | | |/ _` |")
     print("   | |  __/ |  | | | | | | |_| |>  <  | |__| | | (_| |")
     print("   |_|\___|_|  |_| |_| |_|\__,_/_/\_\  \____/|_|\__,_|")
-          
+
     print("Termux repository for Android 5/6")
     print('')
     print('\033[1mChoose a mirror:\033[0m\n')
@@ -26,7 +26,7 @@ def logo():
     print('4. NJU (Nanjing, China)')
     print('5. OneDrive (Singapore)')
     print('\033[1mOther options:\033[0m\n')
-    print('0. Exit')
+    print('6. Exit')
     print('')
 
 def update():
@@ -34,6 +34,8 @@ def update():
     exec('apt update || exit 1', "Failed to update APT lists!")
     print('Done!')
 
+if __name__ == "__main__":
+    copyright = logo()
 
     try:
         option = input('\nPlease select the action to be performed: ')
