@@ -16,7 +16,7 @@ def logo():
     print("   | |/ _ \ '__| '_ ` _ \| | | \ \/ / | |  | | |/ _` |")
     print("   | |  __/ |  | | | | | | |_| |>  <  | |__| | | (_| |")
     print("   |_|\___|_|  |_| |_| |_|\__,_/_/\_\  \____/|_|\__,_|")
-
+    print('')
     print("Termux repository for Android 5/6")
     print('')
     print('\033[1mChoose a mirror:\033[0m\n')
