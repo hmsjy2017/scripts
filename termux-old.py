@@ -24,7 +24,7 @@ def logo():
     print('2. BFSU (Beijing, China)')
     print('3. ISCAS (Beijing, China)')
     print('4. NJU (Nanjing, China)')
-    print('5. OneDrive (Singapore)')
+    print('5. OneDrive (Singapore)\n')
     print('\033[1mOther options:\033[0m\n')
     print('6. Exit')
     print('')
