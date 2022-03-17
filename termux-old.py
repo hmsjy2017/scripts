@@ -45,42 +45,42 @@ if __name__ == "__main__":
     try:
         if int(option) == 1:
             exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/science-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/game-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/unstable-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/x11-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/science-packages-21 science stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/game-packages-21 games stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/unstable-packages-21 unstable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/x11-packages-21 x11 main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
             update()
 
         elif int(option) == 2:
             exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/science-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/game-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/unstable-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/x11-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/science-packages-21 science stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/game-packages-21 games stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/unstable-packages-21 unstable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/x11-packages-21 x11 main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
             update()
 
         elif int(option) == 3:
             exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/science-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/game-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/unstable-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/x11-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/science-packages-21 science stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/game-packages-21 games stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/unstable-packages-21 unstable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/x11-packages-21 x11 main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
             update()
 
         elif int(option) == 4:
             exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/science-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/game-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/unstable-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/x11-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/science-packages-21 science stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/game-packages-21 games stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/unstable-packages-21 unstable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/x11-packages-21 x11 main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
             update()
 
         elif int(option) == 5:
             exec('echo "deb https://fc.iamsjy.com/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://fc.iamsjy.com/termux-old/science-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://fc.iamsjy.com/termux-old/game-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://fc.iamsjy.com/termux-old/unstable-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://fc.iamsjy.com/termux-old/x11-packages-21 stable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://fc.iamsjy.com/termux-old/science-packages-21 science stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://fc.iamsjy.com/termux-old/game-packages-21 games stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://fc.iamsjy.com/termux-old/unstable-packages-21 unstable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+            exec('echo "deb https://fc.iamsjy.com/termux-old/x11-packages-21 x11 main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
             update()
 
         elif int(option) == 6:
