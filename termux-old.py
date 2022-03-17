@@ -8,7 +8,13 @@ def exec(command, error):
     if shellExec(command) != 0:
         print(error)
         os._exit(1)
-
+        
+def rm_old_lists():
+    if os.path.exists('$PREFIX/etc/apt/sources.list.d/science.list')==True:
+        os.remove('$PREFIX/etc/apt/sources.list.d/science.list')
+    if os.path.exists('$PREFIX/etc/apt/sources.list.d/game.list')==True:
+        os.remove('$PREFIX/etc/apt/sources.list.d/game.list')
+    
 def logo():
     print(" _______                                ____  _     _ ")
     print("|__   __|                              / __ \| |   | |")
@@ -44,6 +50,7 @@ if __name__ == "__main__":
 
     try:
         if int(option) == 1:
+            rm_old_lists()
             exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
             exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/science-packages-21 science stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
             exec('echo "deb https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/t/te/termux-old/game-packages-21 games stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
@@ -52,6 +59,7 @@ if __name__ == "__main__":
             update()
 
         elif int(option) == 2:
+            rm_old_lists()
             exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
             exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/science-packages-21 science stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
             exec('echo "deb https://mirrors.bfsu.edu.cn/osdn/storage/g/t/te/termux-old/game-packages-21 games stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
@@ -60,6 +68,7 @@ if __name__ == "__main__":
             update()
 
         elif int(option) == 3:
+            rm_old_lists()
             exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
             exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/science-packages-21 science stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
             exec('echo "deb https://mirror.iscas.ac.cn/osdn/storage/g/t/te/termux-old/game-packages-21 games stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
@@ -68,6 +77,7 @@ if __name__ == "__main__":
             update()
 
         elif int(option) == 4:
+            rm_old_lists()
             exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
             exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/science-packages-21 science stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
             exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/game-packages-21 games stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
@@ -76,6 +86,7 @@ if __name__ == "__main__":
             update()
 
         elif int(option) == 5:
+            rm_old_lists()
             exec('echo "deb https://fc.iamsjy.com/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
             exec('echo "deb https://fc.iamsjy.com/termux-old/science-packages-21 science stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
             exec('echo "deb https://fc.iamsjy.com/termux-old/game-packages-21 games stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
