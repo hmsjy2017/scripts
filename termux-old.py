@@ -29,10 +29,10 @@ def logo():
     print('1. Tsinghua (Beijing, China)')
     print('2. BFSU (Beijing, China)')
     print('3. ISCAS (Beijing, China)')
-    print('4. NJU (Nanjing, China)')
-    print('5. OneDrive (Singapore)\n')
+    print('4. NJU (Nanjing, China)\n')
+#    print('5. OneDrive (Singapore)\n')
     print('\033[1mOther options:\033[0m\n')
-    print('6. Exit')
+    print('5. Exit')
     print('')
 
 def update():
@@ -85,16 +85,16 @@ if __name__ == "__main__":
             exec('echo "deb https://mirror.nju.edu.cn/osdn/storage/g/t/te/termux-old/x11-packages-21 x11 main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
             update()
 
-        elif int(option) == 5:
-            rm_old_lists()
-            exec('echo "deb https://fc.iamsjy.com/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://fc.iamsjy.com/termux-old/science-packages-21 science stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://fc.iamsjy.com/termux-old/game-packages-21 games stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://fc.iamsjy.com/termux-old/unstable-packages-21 unstable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            exec('echo "deb https://fc.iamsjy.com/termux-old/x11-packages-21 x11 main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
-            update()
+#        elif int(option) == 5:
+#            rm_old_lists()
+#            exec('echo "deb https://fc.iamsjy.com/termux-old/termux-packages stable main" > $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+#            exec('echo "deb https://fc.iamsjy.com/termux-old/science-packages-21 science stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+#            exec('echo "deb https://fc.iamsjy.com/termux-old/game-packages-21 games stable" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+#            exec('echo "deb https://fc.iamsjy.com/termux-old/unstable-packages-21 unstable main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+#            exec('echo "deb https://fc.iamsjy.com/termux-old/x11-packages-21 x11 main" >> $PREFIX/etc/apt/sources.list || exit 1', "Failed to create package list!")
+#            update()
 
-        elif int(option) == 6:
+        elif int(option) == 5:
             os._exit(0)
         else:
             print('Illegal input option. Please re-enter.')
